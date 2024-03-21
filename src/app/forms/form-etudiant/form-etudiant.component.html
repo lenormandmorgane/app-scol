@@ -1,0 +1,14 @@
+<form class="Formulaire" (ngSubmit)="save()">
+    <h1>Inscription Etudiant</h1>
+    <input type="text" class="form-control" placeholder="Nom" [(ngModel)]="etudiant.nom" name="nom"/> <br>
+    <input type="text" class="form-control" placeholder="Prenom" [(ngModel)]="etudiant.prenom" name="prenom"/><br>
+    <input type="text" class="form-control" placeholder="Rue" [(ngModel)]="etudiant.rue" name="Rue"/><br>
+    <input type="text" class="form-control" placeholder="Ville" [(ngModel)]="etudiant.ville" name="Ville"/><br>
+    <input type="number" class="form-control" placeholder="CP" [(ngModel)]="etudiant.cp" name="CP"/><br>
+    <input type="email" class="form-control" placeholder="Courriel" [(ngModel)]="etudiant.courriel" name="Courriel"/><br>
+    <input type="text" class="form-control" placeholder="Genre" [(ngModel)]="etudiant.genre" name="Genre"/><br>
+    <input type="number" class="form-control" placeholder="Age" [(ngModel)]="etudiant.age" name="Age"/><br>
+    <input type="number" class="form-control" placeholder="IdCandidat" [(ngModel)]="etudiant.id" name="IdCandidat"/><br>
+    <button type="submit" class="btn btn-primary mt-3">Sauvegarder</button>
+  </form>
+  

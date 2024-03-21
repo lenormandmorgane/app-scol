@@ -1,0 +1,28 @@
+<div class="content">
+    <div class="header">
+        <img src="b.jpg" alt="Image">
+        <h1>liste des etudiant : Hors Paris </h1>
+    </div>
+
+
+<table>
+    <tr>
+        <th>ID Candidat</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Courriel</th>
+
+
+
+
+    </tr>
+    <tr *ngFor="let etu of etudiant">
+        <ng-container *ngIf="etu._ville != 'Paris'">
+        <td>{{etu.idcand}}</td>
+        <td>{{etu._nom}}</td>
+        <td>{{etu._prenom}}</td>
+        <td>{{etu._courriel}}</td>
+    </ng-container>
+
+    </tr>
+</table>

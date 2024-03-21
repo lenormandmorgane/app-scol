@@ -1,0 +1,7 @@
+<form (ngSubmit)="save()">
+    <h1>Ajout Spécialités</h1>
+    <input type="text" class="form-control" placeholder="Libellé" [(ngModel)]="specialite.nom" name="libelle"/> <br>
+    <input type="number" class="form-control" placeholder="idSpecialite" [(ngModel)]="specialite.prenom" name="idSpecialite"/> <br>
+
+    <button type="submit" class="btn btn-primary mt-3">Sauvegarder</button>
+  </form>

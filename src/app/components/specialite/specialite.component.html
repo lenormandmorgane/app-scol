@@ -1,0 +1,20 @@
+<div class="content">
+  <div class="header">
+      <img src="b.jpg" alt="Image">
+      <h1>liste des Spécialités : </h1>
+  </div>
+
+<table>
+    <tr>
+      <th>libelle</th>
+      <th>id Specialite</th>
+    
+    </tr>
+<tr *ngFor="let spe of specialite">
+    <td>{{spe._libelle}}</td> 
+    <td>{{spe._idspec}}</td>
+  
+
+</tr>
+</table>
+
